@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+group Program
+    loop 5 times
+        System -> User: Enter an integer
+        User -> System: *inputs*
+        System -> System: *adds user input to itself*
+    end
+    System -> User : The total is: *total*
+end
+
+@enduml
